@@ -61,7 +61,6 @@ header nav a:hover{
 }
 
 main{
-    height: 100vh;
     background-color: #332B2B;
     padding: 10px;
 }
@@ -75,7 +74,7 @@ caption{
     padding: 10px;
 }
 
-#tabela{
+.tabela{
     overflow-x: auto;
 }
 
@@ -123,19 +122,19 @@ tbody th{
     background-color: var(--cor3);
 }
 
-#edicao{
+#edicao, #terceiroquarto{
     background-color: var(--cor6);
 }
 
-#modalidade{
+#modalidade, #vice{
     background-color: var(--cor5);
 }
 
-#data{
+#data, #titulo{
     background-color: var(--cor4);
 }
 
-#classificacao{
+#classificacao, #nome{
     background-color: var(--cor7);
 }
 
