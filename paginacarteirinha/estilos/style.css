@@ -8,6 +8,19 @@ main h1{
 }
 
 #form{
-    width: 100vw;
+    width: 350px;
+    height: 400px;
+    margin: auto;
     text-align: center;
+
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: center;
+}
+
+input, label{
+    flex-basis: 150px;
+    margin: 10px;
 }

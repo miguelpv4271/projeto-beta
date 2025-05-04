@@ -24,10 +24,15 @@
             <h1> Carteirinha Ham United </h1>
             <section id="form"> 
                 <label for="inome"><p> Nome: </p></label>
-                <input type="text" name="nome" id="inome" oninput="res.innerHTML = inome.value">
-
-                <output id="res"> teste </output>
+                <input type="text" name="nome" id="inome" autocomplete="name" oninput="res.innerHTML = inome.value">
+                <label for="ifoto"><p> Foto: </p></label>
+                <input type="file" name="foto" id="ifoto">
+                
             </section>
+
+            <!-- <section id="cart"> 
+                <output id="res"> Seu nome apareçerá aqui. </output>
+            </section> -->
         </main>
 </body>
 </html>
