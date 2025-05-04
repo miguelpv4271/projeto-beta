@@ -1,0 +1,13 @@
+body{
+    width: 100vw;
+}
+
+main h1{
+    text-align: center;
+    padding: 5px;
+}
+
+#form{
+    width: 100vw;
+    text-align: center;
+}
