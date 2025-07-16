@@ -24,13 +24,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+#dheader{
     text-align: center;
     background-color: var(--cor7);
     padding: 0px;
 }
 
-header h1{
+#dheader h1{
     font-size: 100px;
     text-transform: uppercase;
     padding: 50px 50px 25px 50px;
@@ -38,24 +38,24 @@ header h1{
     
 }
 
-header p{
+#dheader p{
     font-size: 25px;
     padding: 0px 0px 10px 0px;
 }
 
-header nav{
+#dheader nav{
     font-size: 15px;
     text-align: left;
     padding: 10px 10px 10px 0px;
 }
 
-header nav a{
+#dheader nav a{
     padding: 10px 5px;
     text-decoration: none;
     color: white;
     transition-duration: 1s;
 }
 
-header nav a:hover{
+#dheader nav a:hover{
     background-color: var(--cor8);
 }
