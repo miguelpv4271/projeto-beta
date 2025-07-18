@@ -1,0 +1,96 @@
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta e fontes */
+:root {
+  --cor-principal: #C80700;
+  --cor-secundaria: #9C1F1A;
+  --cor-terciaria: #732826;
+  --cor-quartenaria: #472524;
+  --cor-quintenaria: #332322;
+  --cor-sextenaria: #1A1A1A;
+  --cor-hover: #ffffff;
+
+  --cor-texto: #ffffff;
+  --cor-titulo: #f0f0f0;
+  --cor-destaque: #ffcccc;
+
+  --fonte-principal: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo da página */
+body {
+  background-color: var(--cor-sextenaria);
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-principal);
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--cor-hover);
+}
+
+/* Seção sobre */
+.sobre {
+  background-color: var(--cor-quartenaria);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  color: var(--cor-hover);
+  margin-bottom: 20px;
+}
+
+.sobre h3 {
+  font-size: 1.25rem;
+  color: var(--cor-titulo);
+  margin-bottom: 20px;
+}
+
+.sobre__extensão {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Galeria (em branco por enquanto) */
+.galeria {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  border: 2px dashed var(--cor-terciaria);
+  border-radius: 12px;
+  color: var(--cor-terciaria);
+}
+
+/* Rodapé */
+footer {
+  margin-top: auto;
+  background-color: var(--cor-terciaria);
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+}
