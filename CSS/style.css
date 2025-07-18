@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte1';
+    src: url(../fontes/upheavtt.ttf); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-principal: #C80700;
+    --cor-secundaria: #9C1F1A;
+    --cor-terciaria: #732826;
+    --cor-quartenaria: #472524;
+    --cor-quintenaria: #332322;
+    --cor-sextenaria: #332B2B;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor-principal);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#dheader{
+    text-align: center;
+    background-color: var(--cor-principal);
+    padding: 0px;
+}
+
+#dheader h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 50px 50px 25px 50px;
+    font-family: 'fonte1', Arial, Helvetica, sans-serif;
+    
+}
+
+#dheader p{
+    font-size: 25px;
+    padding: 0px 0px 10px 0px;
+}
+
+#dheader nav{
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 10px 10px 0px;
+}
+
+#dheader nav a{
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    transition-duration: 1s;
+}
+
+#dheader nav a:hover{
+    background-color: var(--cor8);
+}

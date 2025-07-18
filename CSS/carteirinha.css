@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta de cores */
+:root {
+  --cor-principal: #C80700;
+  --cor-secundaria: #9C1F1A;
+  --cor-terciaria: #732826;
+  --cor-quartenaria: #472524;
+  --cor-quintenaria: #332322;
+  --cor-sextenaria: #332B2B;
+  --cor-texto: #ffffff;
+  --cor-fundo: #1a1a1a;
+  --cor-clara: #f0f0f0;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-quintenaria);
+  color: var(--cor-clara);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: var(--cor-principal);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.cabecalho p {
+  font-size: 1em;
+  color: var(--cor-texto);
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Título principal */
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--cor-clara);
+}
+
+/* Formulário */
+.formulario {
+  background-color: var(--cor-sextenaria);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.formulario label p {
+  margin: 10px 0 5px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Output (se você reativar) */
+#res {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--cor-clara);
+}

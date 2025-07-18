@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar carteirinha Ham United</title>
+
+    <!-- Estilos principais -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../CSS/carteirinha.css">
+
+    <!-- Ícones e Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="../assets/capybara2.png">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <h1>Ham United!</h1>
+        <p>Um dos melhores grupos da história!</p>
+
+        <!-- Navegação -->
+        <nav>
+            <a href="../HTML/sobre.html">Sobre o Grupo</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <h1>Carteirinha Ham United</h1>
+
+        <!-- Formulário de criação de carteirinha -->
+        <section class="formulario"> 
+            <label for="inome"><p>Nome:</p></label>
+            <input 
+                type="text" 
+                name="nome" 
+                id="inome" 
+                autocomplete="name" 
+                oninput="res.innerHTML = inome.value"
+            >
+
+            <label for="ifoto"><p>Foto:</p></label>
+            <input 
+                type="file" 
+                name="foto" 
+                id="ifoto"
+            >
+        </section>
+
+        <!-- Área de visualização da carteirinha (comentada por enquanto) -->
+        <!--
+        <section id="cart"> 
+            <output id="res">Seu nome aparecerá aqui.</output>
+        </section>
+        -->
+    </main>
+
+</body>
+</html>
