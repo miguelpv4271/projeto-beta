@@ -75,14 +75,43 @@ header h1 {
 }
 
 /* Galeria (em branco por enquanto) */
-.galeria {
+#membros {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 40px auto;
+  padding: 10px;
   text-align: center;
-  border: 2px dashed var(--cor-terciaria);
   border-radius: 12px;
-  color: var(--cor-terciaria);
+  color: var(--cor-texto);
+  background-color: var(--cor-quartenaria)
+
+}
+
+.membro{
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.nomemembro{
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+.fotomembro{
+  width: 150px;
+  height: 150px;
+
+  border: 2px solid var(--cor-destaque);
+  border-radius: 100px;
+}
+
+.descmembro{
+  width: 50%;
+  text-align: justify;
+  margin: 10px;
 }
 
 /* Rodapé */
