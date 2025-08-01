@@ -6,6 +6,7 @@
     <title>Criador de carteirinha Ham United </title>
     <link rel="stylesheet" href="../código/style.css">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/carteirinha.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
@@ -24,15 +25,46 @@
             <h1> Carteirinha Ham United </h1>
             <section id="form"> 
                 <label for="inome"><p> Nome: </p></label>
-                <input type="text" name="nome" id="inome" autocomplete="name" oninput="res.innerHTML = inome.value">
-                <label for="ifoto"><p> Foto: </p></label>
-                <input type="file" name="foto" id="ifoto">
-                
+                <input type="text" name="nome" id="inome" autocomplete="name">
+
+                <label for="idata"><p> Data de ingresso:</p></label>
+                <input type="date" name="data" id="idata">
+
+                <label for="ifoto"><p> Foto (digite o link): </p></label>
+                <input type="text" name="foto" id="ifoto">
+
+                <input type="button" value="Enviar" onclick="formTeste()">
             </section>
 
-            <!-- <section id="cart"> 
-                <output id="res"> Seu nome apareçerá aqui. </output>
-            </section> -->
+            <section id="cart"> 
+                <h1> Carteirinha Ham United</h1>
+
+                <p class="titulocart"> Nome: </p>
+                <output id="onome" class="itemcart"> Seu nome apareçerá aqui. </output>
+                <p class="titulocart"> Data de ingresso: </p>
+                <output id="odata" class="itemcart"> DD/MM/AAAA  </output>
+                <output id="ofoto" class="itemcart"> </output>
+                
+            
+                
+            </section>
         </main>
+                <script>
+            function formTeste(){
+                var inome = window.document.getElementById("inome")
+                var onome = window.document.getElementById("onome")
+
+                var ifoto = window.document.getElementById("ifoto")
+                var ofoto = window.document.getElementById("ofoto")
+
+                var idata = window.document.getElementById("idata")
+                var odata = window.document.getElementById("odata")
+
+                onome.innerHTML = inome.value
+                ofoto.innerHTML = `<img src="${ifoto.value}" alt="sua foto">`
+                odata.innerHTML = idata.value
+            }
+        </script>
 </body>
+
 </html>

@@ -25,15 +25,17 @@ body {
   color: var(--cor-clara);
   line-height: 1.6;
   padding: 20px;
+  width: 98vw;
 }
 
 /* Cabeçalho */
-.cabecalho {
+.dheader {
   background-color: var(--cor-principal);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .cabecalho h1 {
@@ -69,13 +71,14 @@ main h1 {
 }
 
 /* Formulário */
-.formulario {
+#form {
   background-color: var(--cor-sextenaria);
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
   margin: 0 auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  float: left;
 }
 
 .formulario label p {
@@ -92,10 +95,44 @@ main h1 {
 }
 
 /* Output (se você reativar) */
-#res {
+#cart {
+  float: right;
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
   font-size: 1.2em;
   color: var(--cor-clara);
+  width: 500px;
+  border: 10px solid black;
+  padding: 5px 5px 5px 5px;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+#cart h1{
+  width: 100%;
+  background-color: #472524;
+}
+
+#cart #ofoto{
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  padding: 0px;
+}
+
+#cart #ofoto img{
+  max-width: 200px;
+  border: 5px solid black;
+}
+
+.itemcart, .titulocart{
+  padding: 5px;
+}
+
+.titulocart{
+  border-radius: 10px 0px 0px 10px;
+  background-color: #472524;
 }
