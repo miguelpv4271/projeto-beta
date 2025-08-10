@@ -45,7 +45,7 @@ main{
   flex-flow: row wrap;
 }
 
-/* Cabeçalho 
+/* Cabeçalho */
 .dheader {
   background-color: var(--cor-principal);
   padding: 20px;
@@ -78,7 +78,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-} */
+} 
 
 /* Título principal */
 main h1 {
