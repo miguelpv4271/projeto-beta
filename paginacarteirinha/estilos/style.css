@@ -1,21 +1,11 @@
-body{
-    width: 100vw;
-}
-
-main h1{
-    text-align: center;
-    padding: 5px;
-}
-
 #form{
-    width: 350px;
-    height: 400px;
+    width: 400px;
     margin: auto;
     text-align: center;
 
     display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     align-content: flex-start;
     align-items: center;
 }

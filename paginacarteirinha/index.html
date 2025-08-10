@@ -41,7 +41,7 @@
                 <h1> Carteirinha Ham United</h1>
 
                 <p class="titulocart"> Nome: </p>
-                <output id="onome" class="itemcart"> Seu nome apareçerá aqui. </output>
+                <output id="onome" class="itemcart"> Seu nome apareçerá aqui.</output>
                 <p class="titulocart"> Data de ingresso: </p>
                 <output id="odata" class="itemcart"> DD/MM/AAAA  </output>
                 <output id="ofoto" class="itemcart"> FOTO </output>
@@ -61,9 +61,9 @@
                 var idata = window.document.getElementById("idata")
                 var odata = window.document.getElementById("odata")
 
-                onome.innerHTML = inome.value
+                onome.innerHTML = `<p> ${inome.value} </p>`
                 ofoto.innerHTML = `<img src="${ifoto.value}" alt="sua foto">`
-                odata.innerHTML = idata.value
+                odata.innerHTML = `<p> ${idata.value} </p>`
             }
         </script>
 </body>
